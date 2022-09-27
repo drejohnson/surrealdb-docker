@@ -1,3 +1,6 @@
 FROM surrealdb/surrealdb:latest
 
-CMD ["start"]
+ENV USERNAME $USERNAME
+ENV PASSWORD $PASSWORD
+
+CMD ["start", "--user", $USERNAME, "--pass", $PASSWORD]
