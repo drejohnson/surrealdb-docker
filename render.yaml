@@ -1,0 +1,13 @@
+services:
+  # Surrealdb database
+  - type: webservice
+    name: surrealdb
+    region: oregon
+    plan: starter
+    env: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: false
+    disk:
+      name: surrealdb-data
+      mountPath: /var/lib/surrealdb
+      sizeGB: 1
