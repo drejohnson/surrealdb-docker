@@ -1,6 +1,6 @@
 services:
   # Surrealdb database
-  - type: webservice
+  - type: web
     name: surrealdb
     region: oregon
     plan: starter
